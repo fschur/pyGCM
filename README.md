@@ -17,9 +17,8 @@ In particular, the **pyGCM** package implements the Generalized Covariance Measu
 1. [Introduction](#introduction)  
 2. [Installation](#installation)  
 3. [Usage](#usage)  
-4. [Testing](#testing)  
-5. [Reproducing Experiments](#reproducing-experiments)  
-6. [References](#references)  
+4. [Testing](#testing)
+5. [References](#references)  
 
 ---
 
@@ -31,8 +30,6 @@ The key idea of **GCM** is:
 1. Regress \(E\) on \(X\) to obtain residuals \(\hat{\varepsilon}_E\).
 2. Regress \(Y\) on \(X\) to obtain residuals \(\hat{\varepsilon}_Y\).
 3. Compute a test statistic based on the sample covariance between \(\hat{\varepsilon}_E\) and \(\hat{\varepsilon}_Y\).  
-
-If \(\hat{\varepsilon}_X\) and \(\hat{\varepsilon}_Y\) appear uncorrelated, it provides evidence (albeit not a proof) that \(X\) is independent of \(Y\) given \(Z\).
 
 ---
 
@@ -95,32 +92,14 @@ These tests:
 
 ---
 
-## Reproducing Experiments
-
-While we have provided ready-to-run examples and test scripts, you can adapt the code to your own experiments or replicate common setups:
-
-1. **Synthetic Data Experiments**  
-   You can generate synthetic data akin to `X, E, Y` in the tests and systematically vary:
-   - The sample size `n`.
-   - The noise levels.
-   - The dimensionality of `X`, `Y`.
-   - The regression method for residuals.
-
-2. **Categorical vs. Continuous**  
-   The code supports both continuous and categorical variables. For categorical variables, set `categorical_X=True`, and use the `'categorical'` residual method if you want group-based residuals.
-
-Simply adapt the scripts in the `tests/` folder or create new scripts under `experiments/` to run custom scenarios.
-
----
-
 ## References
+The methodology implemented in this package is based on the paper:
 
-**Citation**  
 > Shah, R. D., & Peters, J. (2018).  
 > The Hardness of Conditional Independence Testing and the Generalised Covariance Measure.  
 > [arXiv:1804.07203](https://arxiv.org/abs/1804.07203)
 
-If you use **pyGCM** in your own work, please consider citing the above paper.
+If you use **pyGCM** in your own work, please cite the original paper by Shah and Peters.
 
 ---
 
