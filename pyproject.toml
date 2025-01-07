@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pyGCM"
+version = "0.1.0"
+description = "A Python package for the Generalized Covariance Measure (GCM) test."
+authors = [
+  { name="Felix Schur", email="felix.m.schur@gmail.com" }
+]
+license = "MIT"
+readme = "README.md"
+keywords = ["GCM", "statistics", "causality"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+]
+dependencies = [
+  "numpy",
+  "scipy",
+  "scikit-learn",
+  "rpy2",
+  "GPy",
+]
+
+[project.urls]
+"Source" = "https://github.com/fschur/pyGCM"
