@@ -33,6 +33,12 @@ The key idea of **GCM** is:
 ---
 
 ## Installation
+Run
+
+```bash
+pip install -e . 
+```
+
 If you want to run additional experiments, or test out all features (e.g., Gaussian Process regression, group-mean residuals for categorical variables), install the extra dependencies:
 
 ```bash
