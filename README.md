@@ -1,4 +1,3 @@
-[![Build Status](https://app.travis-ci.com/YourUserName/pyGCM.svg?branch=main)](https://travis-ci.com/YourUserName/pyGCM)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![arXiv](https://img.shields.io/badge/arXiv-1804.07203-b31b1b.svg)](https://arxiv.org/abs/1804.07203)
 
