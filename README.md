@@ -32,9 +32,7 @@ The key idea of **GCM** is:
 
 ---
 
-This will install only the minimal dependencies needed for the core GCM functionality.
-
-### Full Installation
+## Installation
 If you want to run additional experiments, or test out all features (e.g., Gaussian Process regression, group-mean residuals for categorical variables), install the extra dependencies:
 
 ```bash
