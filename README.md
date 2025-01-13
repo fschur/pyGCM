@@ -26,7 +26,7 @@ In particular, the **pyGCM** package implements the Generalized Covariance Measu
 It is a classical result in statistical theory that testing conditional independence \((E \perp Y \mid X)\) is a hard problem, especially when \(X\) is high-dimensional or continuous. This code implements the **Generalized Covariance Measure (GCM)**, as proposed in the cited paper, to address this difficulty.  
  
 The key idea of **GCM** is:
-1. Regress \(E\) on \(X\) to obtain residuals \(\hat{\varepsilon}_E\).
+1. Regress $E$ on \(X\) to obtain residuals \(\hat{\varepsilon}_E\).
 2. Regress \(Y\) on \(X\) to obtain residuals \(\hat{\varepsilon}_Y\).
 3. Compute a test statistic based on the sample covariance between \(\hat{\varepsilon}_E\) and \(\hat{\varepsilon}_Y\).  
 
