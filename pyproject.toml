@@ -9,7 +9,7 @@ description = "A Python package for the Generalized Covariance Measure (GCM) tes
 authors = [
   { name="Felix Schur", email="felix.m.schur@gmail.com" }
 ]
-license = "MIT"
+license = { file = "LICENSE" }
 readme = "README.md"
 keywords = ["GCM", "statistics", "causality"]
 classifiers = [
